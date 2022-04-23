@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14056BD42813E1C1002C4CA3 /* Orders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14056B7E2813DDEA002C4CA3 /* Orders.framework */; };
 		14056BF428142BA8002C4CA3 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056BF228142BA8002C4CA3 /* OrderItem.swift */; };
 		14056BF528142BA8002C4CA3 /* OrdersLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056BF328142BA8002C4CA3 /* OrdersLoader.swift */; };
+		14056BFC28142BDB002C4CA3 /* RemoteOrdersLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056BF728142BDB002C4CA3 /* RemoteOrdersLoader.swift */; };
+		14056BFD28142BDB002C4CA3 /* OrderItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056BF828142BDB002C4CA3 /* OrderItemsMapper.swift */; };
+		14056BFE28142BDB002C4CA3 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056BF928142BDB002C4CA3 /* HTTPClient.swift */; };
+		14056BFF28142BDB002C4CA3 /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056BFB28142BDB002C4CA3 /* HTTPURLResponse+StatusCode.swift */; };
+		14056C0828142C05002C4CA3 /* Orders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14056B7E2813DDEA002C4CA3 /* Orders.framework */; };
+		14056C1328142C14002C4CA3 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056C0F28142C14002C4CA3 /* SharedTestHelpers.swift */; };
+		14056C1428142C14002C4CA3 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056C1028142C14002C4CA3 /* XCTestCase+MemoryLeakTracking.swift */; };
+		14056C1528142C14002C4CA3 /* RemoteOrdersLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056C1228142C14002C4CA3 /* RemoteOrdersLoaderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		14056BD52813E1C1002C4CA3 /* PBXContainerItemProxy */ = {
+		14056C0928142C05002C4CA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 14056B752813DDE9002C4CA3 /* Project object */;
 			proxyType = 1;
@@ -24,9 +31,16 @@
 
 /* Begin PBXFileReference section */
 		14056B7E2813DDEA002C4CA3 /* Orders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Orders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14056BD02813E1C1002C4CA3 /* OrdersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrdersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14056BF228142BA8002C4CA3 /* OrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
 		14056BF328142BA8002C4CA3 /* OrdersLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersLoader.swift; sourceTree = "<group>"; };
+		14056BF728142BDB002C4CA3 /* RemoteOrdersLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteOrdersLoader.swift; sourceTree = "<group>"; };
+		14056BF828142BDB002C4CA3 /* OrderItemsMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItemsMapper.swift; sourceTree = "<group>"; };
+		14056BF928142BDB002C4CA3 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		14056BFB28142BDB002C4CA3 /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
+		14056C0428142C05002C4CA3 /* OrdersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrdersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14056C0F28142C14002C4CA3 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
+		14056C1028142C14002C4CA3 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		14056C1228142C14002C4CA3 /* RemoteOrdersLoaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteOrdersLoaderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,11 +51,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14056BCD2813E1C1002C4CA3 /* Frameworks */ = {
+		14056C0128142C05002C4CA3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14056BD42813E1C1002C4CA3 /* Orders.framework in Frameworks */,
+				14056C0828142C05002C4CA3 /* Orders.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				14056B802813DDEA002C4CA3 /* Orders */,
+				14056C0528142C05002C4CA3 /* OrdersTests */,
 				14056B7F2813DDEA002C4CA3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,7 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				14056B7E2813DDEA002C4CA3 /* Orders.framework */,
-				14056BD02813E1C1002C4CA3 /* OrdersTests.xctest */,
+				14056C0428142C05002C4CA3 /* OrdersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +83,7 @@
 		14056B802813DDEA002C4CA3 /* Orders */ = {
 			isa = PBXGroup;
 			children = (
+				14056BF628142BDB002C4CA3 /* Orders API */,
 				14056BF128142BA8002C4CA3 /* Orders Feature */,
 			);
 			path = Orders;
@@ -80,6 +96,51 @@
 				14056BF328142BA8002C4CA3 /* OrdersLoader.swift */,
 			);
 			path = "Orders Feature";
+			sourceTree = "<group>";
+		};
+		14056BF628142BDB002C4CA3 /* Orders API */ = {
+			isa = PBXGroup;
+			children = (
+				14056BF728142BDB002C4CA3 /* RemoteOrdersLoader.swift */,
+				14056BF828142BDB002C4CA3 /* OrderItemsMapper.swift */,
+				14056BF928142BDB002C4CA3 /* HTTPClient.swift */,
+				14056BFA28142BDB002C4CA3 /* Helpers */,
+			);
+			path = "Orders API";
+			sourceTree = "<group>";
+		};
+		14056BFA28142BDB002C4CA3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				14056BFB28142BDB002C4CA3 /* HTTPURLResponse+StatusCode.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		14056C0528142C05002C4CA3 /* OrdersTests */ = {
+			isa = PBXGroup;
+			children = (
+				14056C0E28142C14002C4CA3 /* Helper */,
+				14056C1128142C14002C4CA3 /* Orders API */,
+			);
+			path = OrdersTests;
+			sourceTree = "<group>";
+		};
+		14056C0E28142C14002C4CA3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				14056C0F28142C14002C4CA3 /* SharedTestHelpers.swift */,
+				14056C1028142C14002C4CA3 /* XCTestCase+MemoryLeakTracking.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		14056C1128142C14002C4CA3 /* Orders API */ = {
+			isa = PBXGroup;
+			children = (
+				14056C1228142C14002C4CA3 /* RemoteOrdersLoaderTests.swift */,
+			);
+			path = "Orders API";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,22 +174,22 @@
 			productReference = 14056B7E2813DDEA002C4CA3 /* Orders.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		14056BCF2813E1C1002C4CA3 /* OrdersTests */ = {
+		14056C0328142C05002C4CA3 /* OrdersTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14056BD72813E1C1002C4CA3 /* Build configuration list for PBXNativeTarget "OrdersTests" */;
+			buildConfigurationList = 14056C0B28142C05002C4CA3 /* Build configuration list for PBXNativeTarget "OrdersTests" */;
 			buildPhases = (
-				14056BCC2813E1C1002C4CA3 /* Sources */,
-				14056BCD2813E1C1002C4CA3 /* Frameworks */,
-				14056BCE2813E1C1002C4CA3 /* Resources */,
+				14056C0028142C05002C4CA3 /* Sources */,
+				14056C0128142C05002C4CA3 /* Frameworks */,
+				14056C0228142C05002C4CA3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				14056BD62813E1C1002C4CA3 /* PBXTargetDependency */,
+				14056C0A28142C05002C4CA3 /* PBXTargetDependency */,
 			);
 			name = OrdersTests;
 			productName = OrdersTests;
-			productReference = 14056BD02813E1C1002C4CA3 /* OrdersTests.xctest */;
+			productReference = 14056C0428142C05002C4CA3 /* OrdersTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -145,9 +206,8 @@
 						CreatedOnToolsVersion = 13.3;
 						LastSwiftMigration = 1330;
 					};
-					14056BCF2813E1C1002C4CA3 = {
+					14056C0328142C05002C4CA3 = {
 						CreatedOnToolsVersion = 13.3;
-						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -165,7 +225,7 @@
 			projectRoot = "";
 			targets = (
 				14056B7D2813DDEA002C4CA3 /* Orders */,
-				14056BCF2813E1C1002C4CA3 /* OrdersTests */,
+				14056C0328142C05002C4CA3 /* OrdersTests */,
 			);
 		};
 /* End PBXProject section */
@@ -178,7 +238,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14056BCE2813E1C1002C4CA3 /* Resources */ = {
+		14056C0228142C05002C4CA3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,25 +252,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14056BFD28142BDB002C4CA3 /* OrderItemsMapper.swift in Sources */,
+				14056BFE28142BDB002C4CA3 /* HTTPClient.swift in Sources */,
 				14056BF428142BA8002C4CA3 /* OrderItem.swift in Sources */,
 				14056BF528142BA8002C4CA3 /* OrdersLoader.swift in Sources */,
+				14056BFF28142BDB002C4CA3 /* HTTPURLResponse+StatusCode.swift in Sources */,
+				14056BFC28142BDB002C4CA3 /* RemoteOrdersLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14056BCC2813E1C1002C4CA3 /* Sources */ = {
+		14056C0028142C05002C4CA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14056C1328142C14002C4CA3 /* SharedTestHelpers.swift in Sources */,
+				14056C1428142C14002C4CA3 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				14056C1528142C14002C4CA3 /* RemoteOrdersLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		14056BD62813E1C1002C4CA3 /* PBXTargetDependency */ = {
+		14056C0A28142C05002C4CA3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 14056B7D2813DDEA002C4CA3 /* Orders */;
-			targetProxy = 14056BD52813E1C1002C4CA3 /* PBXContainerItemProxy */;
+			targetProxy = 14056C0928142C05002C4CA3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -393,41 +460,26 @@
 			};
 			name = Release;
 		};
-		14056BD82813E1C1002C4CA3 /* Debug */ = {
+		14056C0C28142C05002C4CA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hashem.OrdersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		14056BD92813E1C1002C4CA3 /* Release */ = {
+		14056C0D28142C05002C4CA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hashem.OrdersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -457,11 +509,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14056BD72813E1C1002C4CA3 /* Build configuration list for PBXNativeTarget "OrdersTests" */ = {
+		14056C0B28142C05002C4CA3 /* Build configuration list for PBXNativeTarget "OrdersTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				14056BD82813E1C1002C4CA3 /* Debug */,
-				14056BD92813E1C1002C4CA3 /* Release */,
+				14056C0C28142C05002C4CA3 /* Debug */,
+				14056C0D28142C05002C4CA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
