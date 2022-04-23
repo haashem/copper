@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		14056BD42813E1C1002C4CA3 /* Orders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14056B7E2813DDEA002C4CA3 /* Orders.framework */; };
+		14056BF428142BA8002C4CA3 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056BF228142BA8002C4CA3 /* OrderItem.swift */; };
+		14056BF528142BA8002C4CA3 /* OrdersLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056BF328142BA8002C4CA3 /* OrdersLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		14056B7E2813DDEA002C4CA3 /* Orders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Orders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14056BD02813E1C1002C4CA3 /* OrdersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrdersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14056BF228142BA8002C4CA3 /* OrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		14056BF328142BA8002C4CA3 /* OrdersLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +68,18 @@
 		14056B802813DDEA002C4CA3 /* Orders */ = {
 			isa = PBXGroup;
 			children = (
+				14056BF128142BA8002C4CA3 /* Orders Feature */,
 			);
 			path = Orders;
+			sourceTree = "<group>";
+		};
+		14056BF128142BA8002C4CA3 /* Orders Feature */ = {
+			isa = PBXGroup;
+			children = (
+				14056BF228142BA8002C4CA3 /* OrderItem.swift */,
+				14056BF328142BA8002C4CA3 /* OrdersLoader.swift */,
+			);
+			path = "Orders Feature";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +192,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14056BF428142BA8002C4CA3 /* OrderItem.swift in Sources */,
+				14056BF528142BA8002C4CA3 /* OrdersLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +396,7 @@
 		14056BD82813E1C1002C4CA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -401,6 +418,7 @@
 		14056BD92813E1C1002C4CA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
