@@ -83,6 +83,7 @@
 		14056B802813DDEA002C4CA3 /* Orders */ = {
 			isa = PBXGroup;
 			children = (
+				14056C1628142CFC002C4CA3 /* Orders Cache */,
 				14056BF628142BDB002C4CA3 /* Orders API */,
 				14056BF128142BA8002C4CA3 /* Orders Feature */,
 			);
@@ -141,6 +142,13 @@
 				14056C1228142C14002C4CA3 /* RemoteOrdersLoaderTests.swift */,
 			);
 			path = "Orders API";
+			sourceTree = "<group>";
+		};
+		14056C1628142CFC002C4CA3 /* Orders Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Orders Cache";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +219,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 14056B782813DDE9002C4CA3 /* Build configuration list for PBXProject "Orders" */;
+			buildConfigurationList = 14056B782813DDE9002C4CA3 /* Build configuration list for PBXProject "Copper" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -491,7 +499,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14056B782813DDE9002C4CA3 /* Build configuration list for PBXProject "Orders" */ = {
+		14056B782813DDE9002C4CA3 /* Build configuration list for PBXProject "Copper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14056B832813DDEA002C4CA3 /* Debug */,

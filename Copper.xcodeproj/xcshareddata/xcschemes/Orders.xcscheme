@@ -17,7 +17,7 @@
                BlueprintIdentifier = "14056B7D2813DDEA002C4CA3"
                BuildableName = "Orders.framework"
                BlueprintName = "Orders"
-               ReferencedContainer = "container:Orders.xcodeproj">
+               ReferencedContainer = "container:Copper.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "14056B7D2813DDEA002C4CA3"
             BuildableName = "Orders.framework"
             BlueprintName = "Orders"
-            ReferencedContainer = "container:Orders.xcodeproj">
+            ReferencedContainer = "container:Copper.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
@@ -47,7 +47,7 @@
                BlueprintIdentifier = "14056C0328142C05002C4CA3"
                BuildableName = "OrdersTests.xctest"
                BlueprintName = "OrdersTests"
-               ReferencedContainer = "container:Orders.xcodeproj">
+               ReferencedContainer = "container:Copper.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -75,7 +75,7 @@
             BlueprintIdentifier = "14056B7D2813DDEA002C4CA3"
             BuildableName = "Orders.framework"
             BlueprintName = "Orders"
-            ReferencedContainer = "container:Orders.xcodeproj">
+            ReferencedContainer = "container:Copper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
