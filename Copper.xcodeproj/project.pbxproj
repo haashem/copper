@@ -17,6 +17,25 @@
 		14056C1328142C14002C4CA3 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056C0F28142C14002C4CA3 /* SharedTestHelpers.swift */; };
 		14056C1428142C14002C4CA3 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056C1028142C14002C4CA3 /* XCTestCase+MemoryLeakTracking.swift */; };
 		14056C1528142C14002C4CA3 /* RemoteOrdersLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056C1228142C14002C4CA3 /* RemoteOrdersLoaderTests.swift */; };
+		14056C1B28142EE5002C4CA3 /* OrdersStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14056C1928142EE5002C4CA3 /* OrdersStore.xcdatamodeld */; };
+		14056C1D281433A9002C4CA3 /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056C1C281433A9002C4CA3 /* CoreDataHelpers.swift */; };
+		14056C22281433EC002C4CA3 /* ManagedOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056C1E281433EC002C4CA3 /* ManagedOrder.swift */; };
+		14056C24281433EC002C4CA3 /* ManagedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056C20281433EC002C4CA3 /* ManagedCache.swift */; };
+		14056C2728143633002C4CA3 /* LocalOrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056C2628143633002C4CA3 /* LocalOrderItem.swift */; };
+		14056C2928143D42002C4CA3 /* CoreDataOrdersStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056C2828143D42002C4CA3 /* CoreDataOrdersStore.swift */; };
+		14056C2B28143D8C002C4CA3 /* LocalOrdersLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056C2A28143D8C002C4CA3 /* LocalOrdersLoader.swift */; };
+		14056C2D28143DC3002C4CA3 /* OrdersStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14056C2C28143DC3002C4CA3 /* OrdersStore.swift */; };
+		14D054A628145A6400735DD7 /* OrderType+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D054A528145A6400735DD7 /* OrderType+init.swift */; };
+		14D054A828145A9100735DD7 /* OrderStatue+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D054A728145A9100735DD7 /* OrderStatue+init.swift */; };
+		14D054AB281470C000735DD7 /* CoreDataOrdersStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D054AA281470C000735DD7 /* CoreDataOrdersStoreTests.swift */; };
+		14D054AE281473A600735DD7 /* OrdersStoreSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D054AD281473A600735DD7 /* OrdersStoreSpy.swift */; };
+		14D054B02814748600735DD7 /* OrdersCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D054AF2814748600735DD7 /* OrdersCacheTestHelpers.swift */; };
+		14D054B22814754F00735DD7 /* OrderType+rawValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D054B12814754F00735DD7 /* OrderType+rawValue.swift */; };
+		14D054B42814757100735DD7 /* OrderStatus+rawValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D054B32814757100735DD7 /* OrderStatus+rawValue.swift */; };
+		14D054B628147C3F00735DD7 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D054B528147C3F00735DD7 /* URLSessionHTTPClient.swift */; };
+		14D054B828147C4D00735DD7 /* URLSessionHTTPClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D054B728147C4D00735DD7 /* URLSessionHTTPClientTest.swift */; };
+		14D054BC281484C300735DD7 /* CacheOrdersUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D054BB281484C300735DD7 /* CacheOrdersUseCaseTests.swift */; };
+		14D054BE281526E800735DD7 /* LoadFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D054BD281526E800735DD7 /* LoadFromCacheUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +60,25 @@
 		14056C0F28142C14002C4CA3 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		14056C1028142C14002C4CA3 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		14056C1228142C14002C4CA3 /* RemoteOrdersLoaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteOrdersLoaderTests.swift; sourceTree = "<group>"; };
+		14056C1A28142EE5002C4CA3 /* OrdersStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OrdersStore.xcdatamodel; sourceTree = "<group>"; };
+		14056C1C281433A9002C4CA3 /* CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelpers.swift; sourceTree = "<group>"; };
+		14056C1E281433EC002C4CA3 /* ManagedOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedOrder.swift; sourceTree = "<group>"; };
+		14056C20281433EC002C4CA3 /* ManagedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedCache.swift; sourceTree = "<group>"; };
+		14056C2628143633002C4CA3 /* LocalOrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalOrderItem.swift; sourceTree = "<group>"; };
+		14056C2828143D42002C4CA3 /* CoreDataOrdersStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataOrdersStore.swift; sourceTree = "<group>"; };
+		14056C2A28143D8C002C4CA3 /* LocalOrdersLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalOrdersLoader.swift; sourceTree = "<group>"; };
+		14056C2C28143DC3002C4CA3 /* OrdersStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersStore.swift; sourceTree = "<group>"; };
+		14D054A528145A6400735DD7 /* OrderType+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OrderType+init.swift"; sourceTree = "<group>"; };
+		14D054A728145A9100735DD7 /* OrderStatue+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OrderStatue+init.swift"; sourceTree = "<group>"; };
+		14D054AA281470C000735DD7 /* CoreDataOrdersStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataOrdersStoreTests.swift; sourceTree = "<group>"; };
+		14D054AD281473A600735DD7 /* OrdersStoreSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersStoreSpy.swift; sourceTree = "<group>"; };
+		14D054AF2814748600735DD7 /* OrdersCacheTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersCacheTestHelpers.swift; sourceTree = "<group>"; };
+		14D054B12814754F00735DD7 /* OrderType+rawValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OrderType+rawValue.swift"; sourceTree = "<group>"; };
+		14D054B32814757100735DD7 /* OrderStatus+rawValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OrderStatus+rawValue.swift"; sourceTree = "<group>"; };
+		14D054B528147C3F00735DD7 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		14D054B728147C4D00735DD7 /* URLSessionHTTPClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTest.swift; sourceTree = "<group>"; };
+		14D054BB281484C300735DD7 /* CacheOrdersUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheOrdersUseCaseTests.swift; sourceTree = "<group>"; };
+		14D054BD281526E800735DD7 /* LoadFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +121,7 @@
 		14056B802813DDEA002C4CA3 /* Orders */ = {
 			isa = PBXGroup;
 			children = (
+				14D054A428145A2C00735DD7 /* Shared */,
 				14056C1628142CFC002C4CA3 /* Orders Cache */,
 				14056BF628142BDB002C4CA3 /* Orders API */,
 				14056BF128142BA8002C4CA3 /* Orders Feature */,
@@ -104,6 +143,7 @@
 			children = (
 				14056BF728142BDB002C4CA3 /* RemoteOrdersLoader.swift */,
 				14056BF828142BDB002C4CA3 /* OrderItemsMapper.swift */,
+				14D054B528147C3F00735DD7 /* URLSessionHTTPClient.swift */,
 				14056BF928142BDB002C4CA3 /* HTTPClient.swift */,
 				14056BFA28142BDB002C4CA3 /* Helpers */,
 			);
@@ -121,6 +161,7 @@
 		14056C0528142C05002C4CA3 /* OrdersTests */ = {
 			isa = PBXGroup;
 			children = (
+				14D054A92814706C00735DD7 /* Orders Cache */,
 				14056C0E28142C14002C4CA3 /* Helper */,
 				14056C1128142C14002C4CA3 /* Orders API */,
 			);
@@ -132,6 +173,8 @@
 			children = (
 				14056C0F28142C14002C4CA3 /* SharedTestHelpers.swift */,
 				14056C1028142C14002C4CA3 /* XCTestCase+MemoryLeakTracking.swift */,
+				14D054B12814754F00735DD7 /* OrderType+rawValue.swift */,
+				14D054B32814757100735DD7 /* OrderStatus+rawValue.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -140,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				14056C1228142C14002C4CA3 /* RemoteOrdersLoaderTests.swift */,
+				14D054B728147C4D00735DD7 /* URLSessionHTTPClientTest.swift */,
 			);
 			path = "Orders API";
 			sourceTree = "<group>";
@@ -147,8 +191,77 @@
 		14056C1628142CFC002C4CA3 /* Orders Cache */ = {
 			isa = PBXGroup;
 			children = (
+				14056C1728142EAB002C4CA3 /* Infrastructure */,
+				14056C2628143633002C4CA3 /* LocalOrderItem.swift */,
+				14056C2A28143D8C002C4CA3 /* LocalOrdersLoader.swift */,
+				14056C2C28143DC3002C4CA3 /* OrdersStore.swift */,
 			);
 			path = "Orders Cache";
+			sourceTree = "<group>";
+		};
+		14056C1728142EAB002C4CA3 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				14056C1828142EC0002C4CA3 /* CoreData */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		14056C1828142EC0002C4CA3 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				14056C1928142EE5002C4CA3 /* OrdersStore.xcdatamodeld */,
+				14056C1E281433EC002C4CA3 /* ManagedOrder.swift */,
+				14056C20281433EC002C4CA3 /* ManagedCache.swift */,
+				14056C1C281433A9002C4CA3 /* CoreDataHelpers.swift */,
+				14056C2828143D42002C4CA3 /* CoreDataOrdersStore.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		14D054A428145A2C00735DD7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				14D054A528145A6400735DD7 /* OrderType+init.swift */,
+				14D054A728145A9100735DD7 /* OrderStatue+init.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		14D054A92814706C00735DD7 /* Orders Cache */ = {
+			isa = PBXGroup;
+			children = (
+				14D054AC2814734400735DD7 /* Helpers */,
+				14D054B92814849B00735DD7 /* Infrastructure */,
+				14D054BB281484C300735DD7 /* CacheOrdersUseCaseTests.swift */,
+				14D054BD281526E800735DD7 /* LoadFromCacheUseCaseTests.swift */,
+			);
+			path = "Orders Cache";
+			sourceTree = "<group>";
+		};
+		14D054AC2814734400735DD7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				14D054AD281473A600735DD7 /* OrdersStoreSpy.swift */,
+				14D054AF2814748600735DD7 /* OrdersCacheTestHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		14D054B92814849B00735DD7 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				14D054BA281484A700735DD7 /* CoreData */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		14D054BA281484A700735DD7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				14D054AA281470C000735DD7 /* CoreDataOrdersStoreTests.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +377,19 @@
 				14056BFE28142BDB002C4CA3 /* HTTPClient.swift in Sources */,
 				14056BF428142BA8002C4CA3 /* OrderItem.swift in Sources */,
 				14056BF528142BA8002C4CA3 /* OrdersLoader.swift in Sources */,
+				14D054B628147C3F00735DD7 /* URLSessionHTTPClient.swift in Sources */,
+				14056C2D28143DC3002C4CA3 /* OrdersStore.swift in Sources */,
+				14056C24281433EC002C4CA3 /* ManagedCache.swift in Sources */,
 				14056BFF28142BDB002C4CA3 /* HTTPURLResponse+StatusCode.swift in Sources */,
+				14056C2B28143D8C002C4CA3 /* LocalOrdersLoader.swift in Sources */,
 				14056BFC28142BDB002C4CA3 /* RemoteOrdersLoader.swift in Sources */,
+				14D054A828145A9100735DD7 /* OrderStatue+init.swift in Sources */,
+				14056C1D281433A9002C4CA3 /* CoreDataHelpers.swift in Sources */,
+				14056C22281433EC002C4CA3 /* ManagedOrder.swift in Sources */,
+				14056C2728143633002C4CA3 /* LocalOrderItem.swift in Sources */,
+				14D054A628145A6400735DD7 /* OrderType+init.swift in Sources */,
+				14056C1B28142EE5002C4CA3 /* OrdersStore.xcdatamodeld in Sources */,
+				14056C2928143D42002C4CA3 /* CoreDataOrdersStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +398,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				14056C1328142C14002C4CA3 /* SharedTestHelpers.swift in Sources */,
+				14D054BE281526E800735DD7 /* LoadFromCacheUseCaseTests.swift in Sources */,
+				14D054B22814754F00735DD7 /* OrderType+rawValue.swift in Sources */,
+				14D054B02814748600735DD7 /* OrdersCacheTestHelpers.swift in Sources */,
+				14D054AE281473A600735DD7 /* OrdersStoreSpy.swift in Sources */,
 				14056C1428142C14002C4CA3 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				14D054B828147C4D00735DD7 /* URLSessionHTTPClientTest.swift in Sources */,
 				14056C1528142C14002C4CA3 /* RemoteOrdersLoaderTests.swift in Sources */,
+				14D054AB281470C000735DD7 /* CoreDataOrdersStoreTests.swift in Sources */,
+				14D054BC281484C300735DD7 /* CacheOrdersUseCaseTests.swift in Sources */,
+				14D054B42814757100735DD7 /* OrderStatus+rawValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +659,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		14056C1928142EE5002C4CA3 /* OrdersStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				14056C1A28142EE5002C4CA3 /* OrdersStore.xcdatamodel */,
+			);
+			currentVersion = 14056C1A28142EE5002C4CA3 /* OrdersStore.xcdatamodel */;
+			path = OrdersStore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 14056B752813DDE9002C4CA3 /* Project object */;
 }
