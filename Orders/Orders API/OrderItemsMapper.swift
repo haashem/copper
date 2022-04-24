@@ -25,7 +25,9 @@ final public class OrderItemsMapper {
         func toModels() throws -> [OrderItem] {
             return try orders.map { item in
                 let createdAtSeconds = TimeInterval(Double(item.createdAt)!/1000).rounded(.down);
-                return OrderItem(id: item.orderId, currency: item.currency, amount: try Decimal(item.amount, format: .number), orderType: try OrderType(rawValue: item.orderType), orderStatus: try OrderStatus(rawValue: item.orderStatus), createdAt: Date(timeIntervalSince1970: createdAtSeconds))
+                guard let amount = Decimal(string: item.amount) else { throw RemoteOrdersLoader.Error.invalidData }
+                
+                return OrderItem(id: item.orderId, currency: item.currency, amount: amount, orderType: try OrderType(rawValue: item.orderType), orderStatus: try OrderStatus(rawValue: item.orderStatus), createdAt: Date(timeIntervalSince1970: createdAtSeconds))
             }
         }
     }
