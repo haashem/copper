@@ -42,35 +42,3 @@ final public class OrderItemsMapper {
         return models
     }
 }
-
-private extension OrderType  {
-     init(rawValue: String) throws {
-        switch rawValue {
-        case "deposit":
-            self = .deposit
-        case "withdraw":
-            self = .withdraw
-        case "buy":
-            self = .buy
-        case "sell":
-            self = .sell
-        default: throw DecodingError.valueNotFound(OrderType.self, DecodingError.Context(codingPath: [], debugDescription: "value for orderType is not same as expected ones"))
-        }
-    }
-}
-
-private extension OrderStatus  {
-    init(rawValue: String) throws {
-        switch rawValue {
-        case "executed":
-            self = .executed
-        case "canceled":
-            self = .canceled
-        case "approved":
-            self = .approved
-        case "processing":
-            self = .processing
-        default: throw DecodingError.valueNotFound(OrderType.self, DecodingError.Context(codingPath: [], debugDescription: "value for orderStatus is not same as expected ones"))
-        }
-    }
-}

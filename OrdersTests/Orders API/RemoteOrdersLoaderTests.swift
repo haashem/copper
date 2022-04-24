@@ -181,34 +181,3 @@ class OrdersTests: XCTestCase {
         }
     }
 }
-
-private extension OrderType  {
-    var rawValue: String {
-        switch self {
-        case .sell:
-            return "sell"
-        case .buy:
-            return "buy"
-        case .withdraw:
-            return "withdraw"
-        case .deposit:
-            return "deposit"
-        }
-    }
-}
-
-private extension OrderStatus  {
-    var rawValue: String {
-        switch self {
-        case .executed:
-            return "executed"
-        case .approved:
-            return "approved"
-        case .canceled:
-            return "canceled"
-        case .processing:
-            return "processing"
-        }
-    }
-}
-
