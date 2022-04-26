@@ -7,8 +7,8 @@
 
 import UIKit
 
-final class OrdersDownloadViewController {
-    var view: DownloadView? {
+final public class OrdersDownloadViewController {
+    public var view: DownloadView? {
         didSet {
             guard let view = view else { return }
             bind(view)
@@ -17,11 +17,11 @@ final class OrdersDownloadViewController {
     
     private var viewModel: OrdersViewModel
     
-    init(viewModel: OrdersViewModel) {
+    public init(viewModel: OrdersViewModel) {
         self.viewModel = viewModel
     }
     
-    @objc func refresh() {
+    @objc public func download() {
         viewModel.loadOrders()
     }
     
@@ -33,6 +33,6 @@ final class OrdersDownloadViewController {
                 view?.endRefreshing()
             }
         }
-        view.downloadButton.addTarget(self, action: #selector(refresh), for: .touchUpInside)
+        view.downloadButton.addTarget(self, action: #selector(download), for: .touchUpInside)
     }
 }

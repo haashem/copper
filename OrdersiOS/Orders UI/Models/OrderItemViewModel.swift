@@ -26,7 +26,7 @@ final public class OrderItemViewModel {
         self.model = model
     }
     
-    var transaction: String {
+    public var transaction: String {
         switch model.orderType {
             case .deposit:
                 return "In \(model.currency)"
@@ -37,23 +37,23 @@ final public class OrderItemViewModel {
         }
     }
 
-    var amount: String  {
+    public var amount: String  {
         let amonut = "\(OrderItemViewModel.amountFormatter.string(from: model.amount as NSDecimalNumber)!) \(model.currency)"
         
         switch model.orderType {
         case .deposit, .buy:
-            return "+\(amonut))"
+            return "+\(amonut)"
         
         case .sell, .withdraw:
             return "-\(amonut)"
         }
     }
 
-    var date: String {
+    public var date: String {
         return OrderItemViewModel.dateFormatter.string(from: model.createdAt)
     }
     
-    var status: String {
+    public var status: String {
         return model.orderStatus.title
     }
 }

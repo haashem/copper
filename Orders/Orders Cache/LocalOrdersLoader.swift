@@ -14,7 +14,7 @@ public final class LocalOrdersLoader {
     }
 }
 
-extension LocalOrdersLoader {
+extension LocalOrdersLoader: OrdersCache {
     
     public typealias SaveResult = Result<Void, Error>
     
@@ -31,7 +31,7 @@ extension LocalOrdersLoader {
     
 }
 
-extension LocalOrdersLoader {
+extension LocalOrdersLoader: OrdersLoader {
     
     public typealias LoadResult = Result<[OrderItem], Error>
     

@@ -9,11 +9,11 @@ import UIKit
 
 final public class OrdersViewController: UIViewController, UITableViewDataSource {
     
-    private var refreshController: OrdersDownloadViewController?
-    @IBOutlet private(set) var downloadView: DownloadView!
-    @IBOutlet private(set) var tableView: UITableView!
+    public var downloadController: OrdersDownloadViewController?
+    @IBOutlet public private(set) var downloadView: DownloadView!
+    @IBOutlet public private(set) var tableView: UITableView!
     
-    var tableModel = [OrderItemCellController]() {
+    public var tableModel = [OrderItemCellController]() {
         didSet {
             guard tableModel.isEmpty == false else {
                 return
@@ -22,16 +22,11 @@ final public class OrdersViewController: UIViewController, UITableViewDataSource
             tableView.reloadData() }
     }
     
-    convenience init(refreshController: OrdersDownloadViewController) {
-        self.init()
-        self.refreshController = refreshController
-    }
-    
     public override func viewDidLoad() {
         super.viewDidLoad()
         showDownloadView()
-        refreshController?.view = downloadView
-        refreshController?.refresh()
+        downloadController?.view = downloadView
+        downloadController?.download()
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -56,7 +51,7 @@ final public class OrdersViewController: UIViewController, UITableViewDataSource
     }
     
     private func hideDownloadView() {
-        downloadView.removeFromSuperview()
+        self.downloadView.removeFromSuperview()
     }
 }
 

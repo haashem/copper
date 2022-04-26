@@ -9,17 +9,17 @@ import Orders
 
 final public class OrdersViewModel {
     
-    typealias Observer<T> = (T) -> Void
+    public typealias Observer<T> = (T) -> Void
     private let ordersLoader: OrdersLoader
     
-    init(ordersLoader: OrdersLoader) {
+    public init(ordersLoader: OrdersLoader) {
         self.ordersLoader = ordersLoader
     }
     
-    var onLoadingStateChange: Observer<Bool>?
-    var onOrdersLoad: Observer<[OrderItem]>?
+    public var onLoadingStateChange: Observer<Bool>?
+    public var onOrdersLoad: Observer<[OrderItem]>?
     
-    func loadOrders() {
+    public func loadOrders() {
         onLoadingStateChange?(true)
         ordersLoader.load { [weak self] result in
             if let orders = try? result.get() {

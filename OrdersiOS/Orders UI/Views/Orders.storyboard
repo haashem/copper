@@ -11,7 +11,7 @@
         <!--Orders View Controller-->
         <scene sceneID="ZuK-qE-IIs">
             <objects>
-                <viewController id="3YG-mW-BTW" customClass="OrdersViewController" customModule="OrdersiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController interfaceStyle="dark" id="3YG-mW-BTW" customClass="OrdersViewController" customModule="OrdersiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sfu-y7-oU8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
