@@ -46,6 +46,10 @@ class OrdersStoreSpy: OrdersStore {
         retreivalCompletions[index](.success(.none))
     }
     
+    func completeRetrievalWithInvalidCache(at index: Int = 0) {
+        retreivalCompletions[index](.success([LocalOrderItem(id: "", currency: "", amount: 1, orderType: "", orderStatus: "", createdAt: Date())]))
+    }
+    
     func completeRetrieval(with orders: [LocalOrderItem], at index: Int = 0) {
         retreivalCompletions[index](.success(orders))
     }

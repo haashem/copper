@@ -39,6 +39,13 @@ class LoadFromCacheUseCaseTests: XCTestCase {
         })
     }
     
+    func test_load_deliversNoOrderOnInvalidCache() {
+        let (sut, store) = makeSut()
+        expect(sut, toCompleteWith: .success([]), when: {
+            store.completeRetrievalWithInvalidCache()
+        })
+    }
+    
     func test_load_deliversCachedOrders() {
         let (sut, store) = makeSut()
         let feed = uniqueOrders()

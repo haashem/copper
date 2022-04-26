@@ -37,13 +37,13 @@ extension LocalOrdersLoader: OrdersLoader {
     
     public func load(completion: @escaping (LoadResult) -> Void) {
         store.retrieve { [weak self] result in
-            guard let self = self else { return }
+            guard let _ = self else { return }
             switch result {
             case let .failure(error):
                 completion(.failure(error))
                 
             case let .success(.some(cachedOrders)):
-                completion(.success(try! cachedOrders.toModels()))
+                completion(.success((try? cachedOrders.toModels()) ?? []))
                 
             case .success:
                 completion(.success([]))
